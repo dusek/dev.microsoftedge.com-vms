@@ -1,0 +1,15 @@
+Vagrant.configure('2') do |config|
+  USERNAME = 'IEUser'
+  PASSWORD = 'Passw0rd!'
+
+  config.vm.guest = :windows
+
+  config.ssh.username = USERNAME
+  config.ssh.password = PASSWORD
+  # avoids error stating Vagrant does not know how to generate and
+  # insert a new keypair for a Windows guest OS
+  config.ssh.insert_key = false
+
+  config.winrm.username = USERNAME
+  config.winrm.password = PASSWORD
+end

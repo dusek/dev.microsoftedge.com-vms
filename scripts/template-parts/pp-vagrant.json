@@ -4,6 +4,7 @@
       "type": "vagrant",
       "compression_level": 6,
       "keep_input_artifact": true,
+      "vagrantfile_template": "template-parts/Vagrantfile",
       "output": "..\\vms\\output\\Vagrant\\edgems.box",
       "only": ["virtualbox-iso"]
     }
